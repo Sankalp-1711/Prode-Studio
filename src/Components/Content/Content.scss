@@ -1,0 +1,251 @@
+@import url('https://fonts.googleapis.com/css2?family=Urbanist:wght@400;700&display=swap');
+
+.layout {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  
+    /* Appointment Section */
+    .appointment-section {
+      background: url('Hero.png') no-repeat center;
+      background-size:contain;
+      
+      color: white;
+      // padding: 60px 20px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  
+      .appointment-content {
+        background-color: rgba(255, 255, 255, 0); /* Dark transparent background */
+        padding: 40px;
+        border-radius: 10px;
+        text-align: center;
+  
+        h2 {
+            font-size: 1.6rem;
+          margin-bottom: 10px;
+          font-family: 'Urbanist', sans-serif;
+        }
+  
+        h3 {
+          font-size: 1.5rem;
+          margin-bottom: 20px;
+        }
+  
+        form {
+          display: flex;
+          flex-direction: column;
+          gap: 15px;
+  
+          input {
+            padding: 10px;
+            font-size: 1rem;
+            // border-radius: 5px;
+            background-color: rgba(255, 255, 255, 0); /* Fully transparent input background */
+            border: 1px solid #ccc; /* Keep the border for visibility */
+            color: #fff; /* Make sure the text is visible */
+            &::placeholder {
+                color: rgba(255, 255, 255, 0.7); /* Set placeholder text color to semi-transparent white */
+              }
+              
+          }
+
+          textarea {
+            font-size: 1rem;
+            height: 55px;
+            background-color: rgba(255, 255, 255, 0); /* Fully transparent input background */
+            border: 1px solid #ccc; /* Keep the border for visibility */
+            color: #fff; /* Make sure the text is visible */
+
+            &::placeholder {
+                color: rgba(255, 255, 255, 0.7); /* Set placeholder text color to semi-transparent white */
+              }
+          }
+  
+          button {
+            background-color: #000;
+            color: white;
+            padding: 10px;
+            border: none;
+            font-size: 1rem;
+            cursor: pointer;
+  
+            &:hover {
+              background-color: #333;
+            }
+          }
+        }
+      }
+    }
+  
+    /* Testimonials Section */
+    .testimonials-section {
+      background-color: #fce7cd;
+      padding: 60px 20px;
+      text-align: center;
+  
+      h3 {
+        font-size: 1rem;
+        margin-bottom: 10px;
+        letter-spacing: 1px;
+      }
+  
+      h2 {
+        font-size: 2rem;
+        margin-bottom: 20px;
+      }
+  
+      .rating {
+        font-size: 1.5rem;
+        color: gold;
+        margin-bottom: 20px;
+      }
+  
+      p {
+        font-size: 1rem;
+        line-height: 1.5;
+        max-width: 700px;
+        margin: 0 auto;
+        margin-bottom: 10px;
+      }
+  
+      .testimonial-author {
+        font-weight: bold;
+      }
+    }
+  
+    /* Follow Us Section */
+    .follow-us-section {
+      // padding: 60px 20px;
+      text-align: center;
+  
+      h3 {
+        font-size: 1.5rem;
+        margin-bottom: 20px;
+      }
+  
+      .gallery {
+        display: flex;
+        justify-content: space-between;
+        gap: 10px;
+        flex-wrap: wrap;
+  
+        img {
+          width: 100%;
+          max-width: 240px;
+          border-radius: 5px;
+          cursor: pointer;
+  
+          &:hover {
+            transform: scale(1.05);
+            transition: transform 0.3s ease;
+          }
+        }
+      }
+    }
+  
+    /* Mobile Responsiveness */
+    @media (max-width: 568px) {
+      padding: 10px;
+  
+      /* Appointment Section for mobile */
+      .appointment-section {
+        padding: 40px 10px;
+  
+        .appointment-content {
+          padding: 20px;
+          
+          h2 {
+            font-size: 1.8rem; /* Smaller font size */
+          }
+  
+          h3 {
+            font-size: 1.2rem;
+          }
+  
+          form {
+            input {
+              font-size: 0.9rem; /* Adjust input size */
+            }
+  
+            button {
+              font-size: 0.9rem; /* Adjust button size */
+            }
+          }
+        }
+      }
+  
+      /* Testimonials Section for mobile */
+      .testimonials-section {
+        padding: 40px 10px;
+  
+        h2 {
+          font-size: 1.6rem; /* Adjust font size */
+        }
+  
+        p {
+          font-size: 0.9rem; /* Smaller text for mobile */
+        }
+      }
+  
+      /* Follow Us Section for mobile */
+      .follow-us-section {
+        padding: 40px 10px;
+  
+        .gallery {
+          flex-direction: column; /* Stack images vertically */
+          align-items: center;
+  
+          img {
+            max-width: 100%; /* Make images full-width */
+            margin-bottom: 10px;
+
+          }
+        }
+      }
+    }
+
+    
+  
+    /* Further Mobile Tweaks for very small screens */
+    @media (max-width: 480px) {
+      /* Appointment Section for small screens */
+      .appointment-section {
+        padding: 30px 5px;
+  
+        .appointment-content {
+          h2 {
+            font-size: 1.5rem;
+          }
+  
+          h3 {
+            font-size: 1rem;
+          }
+  
+          form {
+            input {
+              font-size: 0.8rem;
+            }
+  
+            button {
+              font-size: 0.8rem;
+              padding: 8px;
+            }
+          }
+        }
+      }
+  
+      /* Testimonials Section for small screens */
+      .testimonials-section {
+        h2 {
+          font-size: 1.4rem;
+        }
+  
+        p {
+          font-size: 0.8rem;
+        }
+      }
+    }
+  }
+  

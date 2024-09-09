@@ -1,0 +1,141 @@
+.Middle-Section {
+    margin-bottom: 2rem;
+  
+    .middle-section-content {
+      text-align: center;
+  
+      p {
+        color: #495057;
+        font-size: 1rem;
+      }
+  
+      h2 {
+        font-size: 2rem;
+      }
+    }
+  
+    .middle-section-images {
+      gap: 1.5rem;
+  
+      .allimages {
+        gap: 0.4rem;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+  
+        .description {
+          text-align: center;
+          p {
+            margin: 5px 0px 0px 0px;
+            color: #6c757d;
+          }
+        }
+      }
+  
+      img {
+        width: 300px;
+        transition: transform 0.3s ease-in-out;
+  
+        &:hover {
+          transform: scale(1.05);
+        }
+      }
+    }
+  
+    .btn {
+      text-align: center;
+  
+      button {
+        border: 1px solid black;
+        background-color: #0a0a0b;
+        color: #fafafa;
+        padding: 0.5rem 3rem;
+        font-size: 0.7rem;
+        margin-top: 1rem;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+  
+        &:hover {
+          background-color: #333;
+        }
+      }
+    }
+  
+    /* Responsive Design */
+    @media (max-width: 1200px) {
+      .middle-section-content {
+        h2 {
+          font-size: 1.8rem;
+        }
+  
+        p {
+          font-size: 0.9rem;
+        }
+      }
+  
+    //   .middle-section-images {
+    //     .allimages {
+    //       img {
+    //         // width: 250px;
+    //       }
+    //     }
+    //   }
+  
+      .btn button {
+        padding: 0.5rem 2.5rem;
+      }
+    }
+  
+    @media (max-width: 768px) {
+      .middle-section-content {
+        h2 {
+          font-size: 1.6rem;
+        }
+  
+        p {
+          font-size: 0.85rem;
+        }
+      }
+  
+    //   .middle-section-images {
+    //     .allimages {
+    //       img {
+    //         // width: 200px;
+    //       }
+    //     }
+    //   }
+  
+      .btn button {
+        padding: 0.5rem 2rem;
+      }
+    }
+  
+    @media (max-width: 480px) {
+      .middle-section-content {
+        h2 {
+          font-size: 1.4rem;
+        }
+  
+        p {
+          font-size: 0.8rem;
+        }
+      }
+  
+      .middle-section-images {
+        .allimages {
+          flex-direction: column;
+          text-align: center;
+          img {
+            // width: 100%;
+            text-align: center;
+          }
+        }
+      }
+  
+      .btn button {
+        padding: 0.5rem 1.5rem;
+        font-size: 0.6rem;
+      }
+    }
+  }
+  

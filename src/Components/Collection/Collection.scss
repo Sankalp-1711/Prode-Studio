@@ -1,0 +1,152 @@
+.Collection {
+    gap: 2rem;
+    display: flex;
+    flex-direction: column;
+  
+    .mens-collection, .womens-collection {
+      max-width: 90%;
+      margin: 0 auto;
+      display: flex;
+      gap: 4rem;
+  
+      button {
+        border: 1px solid black;
+        background-color: #0A0A0B;
+        color: #FAFAFA;
+        padding: 0.5rem 3rem;
+        font-size: 0.7rem;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+  
+        &:hover {
+          background-color: #333;
+        }
+      }
+  
+      .large-img {
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+      }
+  
+      .small-img {
+        display: flex;
+        justify-content: flex-end;
+        flex-direction: column;
+        align-items: flex-end;
+  
+        img {
+          width: 400px;
+          height: 500px;
+          object-fit: cover;
+          transition: transform 0.3s ease-in-out;
+  
+          &:hover {
+            transform: scale(1.05);
+          }
+        }
+  
+        p {
+          text-align: end;
+        }
+      }
+  
+      .small-img-womens {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+  
+        img {
+          width: 300px;
+          height: 300px;
+          object-fit: cover;
+          transition: transform 0.3s ease-in-out;
+  
+          &:hover {
+            transform: scale(1.05);
+          }
+        }
+      }
+    }
+  
+    /* Responsive Design */
+    @media (max-width: 1200px) {
+      .mens-collection, .womens-collection {
+        gap: 2rem;
+  
+        .small-img img, .small-img-womens img {
+          width: 350px;
+          height: 400px;
+        }
+  
+        .large-img img {
+          width: 100%;
+          height: auto;
+        }
+      }
+    }
+  
+    @media (max-width: 768px) {
+      .mens-collection, .womens-collection {
+        flex-direction: column;
+        gap: 1.5rem;
+  
+        .small-img, .small-img-womens {
+          align-items: center;
+          text-align: center;
+  
+          img {
+            width: 280px;
+            height: 350px;
+          }
+  
+          h1, p {
+            text-align: center;
+          }
+        }
+  
+        .large-img img {
+          width: 100%;
+          height: auto;
+        }
+  
+        button {
+          padding: 0.5rem 2rem;
+        }
+      }
+    }
+  
+    @media (max-width: 480px) {
+      .mens-collection, .womens-collection {
+        gap: 1rem;
+  
+        .small-img, .small-img-womens {
+          img {
+            width: 100%;
+            height: auto;
+          }
+  
+          h1 {
+            font-size: 1.4rem;
+          }
+  
+          p {
+            font-size: 0.9rem;
+          }
+        }
+  
+        .large-img img {
+          width: 100%;
+          height: auto;
+        }
+  
+        button {
+          padding: 0.5rem 1.5rem;
+          font-size: 0.6rem;
+        }
+      }
+    }
+  }
+  

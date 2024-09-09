@@ -1,0 +1,162 @@
+.trending-accessories {
+    text-align: center;
+    padding: 2rem;
+  
+    .heading {
+      font-size: 2.5rem;
+      margin-bottom: 1.5rem;
+      font-family: 'Serif', sans-serif; // Example font, adjust as needed
+    }
+  
+    .categories {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 1rem;
+      margin-bottom: 2rem;
+  
+      span {
+        font-size: 1rem;
+        cursor: pointer;
+        color: #000;
+        text-transform: uppercase;
+        transition: color 0.3s;
+  
+        &:hover,
+        &.active {
+          color: #000;
+          text-decoration: underline;
+        }
+      }
+    }
+  
+    .accessories-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 1.5rem;
+      margin-bottom: 2rem;
+  
+      .accessory-item {
+        text-align: center;
+  
+        img {
+          width: 100%;
+          height: auto;
+          margin-bottom: 1rem;
+        }
+  
+        h3 {
+          font-size: 1rem;
+          font-weight: normal;
+          margin-bottom: 0.5rem;
+        }
+  
+        p {
+          font-size: 0.9rem;
+          color: #666;
+        }
+      }
+    }
+  
+    .view-all-btn {
+      padding: 0.75rem 1.5rem;
+      background-color: #000;
+      color: #fff;
+      border: none;
+      cursor: pointer;
+      font-size: 1rem;
+      text-transform: uppercase;
+  
+      &:hover {
+        background-color: #333;
+      }
+    }
+  
+    /* Media queries for responsiveness */
+  
+    @media (max-width: 1200px) {
+      .accessories-grid {
+        grid-template-columns: repeat(3, 1fr); // 3 items per row on large tablets
+      }
+  
+      .heading {
+        font-size: 2rem; // Slightly reduce heading size
+      }
+    }
+  
+    @media (max-width: 992px) {
+      .accessories-grid {
+        grid-template-columns: repeat(2, 1fr); // 2 items per row on tablets
+      }
+  
+      .categories {
+        gap: 0.75rem; // Reduce gap between categories
+        span {
+          font-size: 0.9rem; // Reduce category font size
+        }
+      }
+  
+      .view-all-btn {
+        font-size: 0.9rem; // Reduce button font size
+      }
+    }
+  
+    @media (max-width: 768px) {
+      padding: 1.5rem;
+      margin-top: 8rem;
+  
+      .heading {
+        font-size: 1.8rem; // Further reduce heading size for smaller tablets
+      }
+  
+      .categories {
+        gap: 0.5rem;
+        span {
+          font-size: 0.85rem;
+        }
+      }
+  
+      .accessories-grid {
+        grid-template-columns: 1fr; // 1 item per row on mobile devices
+        gap: 1rem;
+      }
+  
+      .view-all-btn {
+        font-size: 0.85rem;
+        padding: 0.6rem 1.2rem;
+      }
+    }
+  
+    @media (max-width: 480px) {
+      .heading {
+        font-size: 1.6rem; // Smaller heading for mobile devices
+      }
+  
+      .categories {
+        gap: 0.3rem;
+        span {
+          font-size: 0.75rem;
+        }
+      }
+  
+      .accessories-grid {
+        gap: 0.75rem;
+  
+        .accessory-item {
+          h3 {
+            font-size: 0.9rem; // Smaller accessory name font
+          }
+  
+          p {
+            font-size: 0.8rem; // Smaller price font
+          }
+        }
+      }
+  
+      .view-all-btn {
+        font-size: 0.8rem;
+        padding: 0.5rem 1rem;
+      }
+    }
+  }
+  
