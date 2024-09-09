@@ -7,7 +7,7 @@
   
     /* Appointment Section */
     .appointment-section {
-      background: url('Hero.png') no-repeat center;
+      background: url('../../assets/Hero.png') no-repeat center;
       background-size:contain;
       
       color: white;
@@ -15,6 +15,7 @@
       display: flex;
       justify-content: center;
       align-items: center;
+      margin-bottom: 3rem;
   
       .appointment-content {
         background-color: rgba(255, 255, 255, 0); /* Dark transparent background */
