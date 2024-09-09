@@ -4,6 +4,7 @@ import { CiHeart } from "react-icons/ci";
 import { PiBagSimpleThin } from "react-icons/pi";
 import { CiUser } from "react-icons/ci";
 import { CiSearch } from "react-icons/ci";
+import Typewriter from './Typewriter';
 const HeroSection = () => {
   return (
     <div className="hero-container">
@@ -39,9 +40,13 @@ const HeroSection = () => {
       </nav>
       <div className="hero-section">
         <div className="overlay">
-          <h1 className="heading">
+          {/* <h1 className="heading">
             Don’t Just Buy Outfit, <br /> Buy an Identity
-          </h1>
+          </h1> */}
+          <h1 className="heading">
+  <Typewriter text="Don’t Just Buy Outfit, Buy an Identity" speed={100} />
+</h1>
+
         </div>
       </div>
     </div>
